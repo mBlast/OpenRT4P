@@ -27,7 +27,7 @@ BLE_client::BLE_client(){
 
 // initie le client BLE
 void BLE_client::begin(){  
-  BLEDevice::init("BLE Boitier");
+  BLEDevice::init("BLE Boitier"); //nom bluetooth du boitier de commande
   
   pBLEScan = BLEDevice::getScan(); //create new scan
   pBLEScan->setAdvertisedDeviceCallbacks(new MyAdvertisedDeviceCallbacks());
